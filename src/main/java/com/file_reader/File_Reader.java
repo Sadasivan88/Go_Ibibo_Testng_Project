@@ -7,13 +7,13 @@ import java.io.FileNotFoundException;
 import java.util.Properties;
 
 
-public class File_Reader_Signin {
+public class File_Reader {
 	
 	static FileReader fr;
 	
 	public static Properties prop_File() {
 		
-		File file=new File("D:\\IPT\\Go_Ibibo_testng_Project\\src\\main\\java\\com\\property_file\\signin.properties");
+		File file=new File("src\\main\\java\\com\\property_file\\go_ibibo.properties");
 		
 		try {
 			fr=new FileReader(file);

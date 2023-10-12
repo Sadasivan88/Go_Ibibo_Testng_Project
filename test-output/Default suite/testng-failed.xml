@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.runner.Runner_Signin">
+      <class name="com.runner.Runner_Class">
         <methods>
-          <include name="phno"/>
-          <include name="sign_Up"/>
+          <include name="launch_Go_Ibibo"/>
+          <include name="train_Selection"/>
+          <include name="search_Trains"/>
+          <include name="ticket_Booking"/>
         </methods>
-      </class> <!-- com.runner.Runner_Signin -->
+      </class> <!-- com.runner.Runner_Class -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

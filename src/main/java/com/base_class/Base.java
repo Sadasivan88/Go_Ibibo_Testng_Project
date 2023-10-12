@@ -186,11 +186,37 @@ public class Base {
 	}
 	
 	
-	public static void enterkey() throws AWTException {
+	public static void enterkey(String key) throws AWTException, Exception {
 		Robot robotobj = new Robot();
+		if(key.equalsIgnoreCase("enter")) {
 		robotobj.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
 		robotobj.keyRelease(KeyEvent.VK_ENTER);
-		
+		}else if(key.equalsIgnoreCase("M")) {
+			robotobj.keyPress(KeyEvent.VK_M);
+			Thread.sleep(1000);
+			robotobj.keyRelease(KeyEvent.VK_M);
+		}else if(key.equalsIgnoreCase("A")) {
+			robotobj.keyPress(KeyEvent.VK_A);
+			Thread.sleep(1000);
+			robotobj.keyRelease(KeyEvent.VK_A);
+		}else if(key.equalsIgnoreCase("S")) {
+			robotobj.keyPress(KeyEvent.VK_S);
+			Thread.sleep(1000);
+			robotobj.keyRelease(KeyEvent.VK_S);
+		}else if(key.equalsIgnoreCase("E")) {
+			robotobj.keyPress(KeyEvent.VK_E);
+			Thread.sleep(1000);
+			robotobj.keyRelease(KeyEvent.VK_E);
+		}else if(key.equalsIgnoreCase("R")) {
+			robotobj.keyPress(KeyEvent.VK_R);
+			Thread.sleep(1000);
+			robotobj.keyRelease(KeyEvent.VK_R);
+		}else if(key.equalsIgnoreCase("down")) {
+			robotobj.keyPress(KeyEvent.VK_DOWN);
+			Thread.sleep(1000);
+			robotobj.keyRelease(KeyEvent.VK_DOWN);
+		}
 		
 	}
 	
