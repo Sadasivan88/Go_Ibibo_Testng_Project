@@ -23,7 +23,7 @@ public class Runner_Class extends Base {
 
 	}
 	
-	@Test (dependsOnMethods = "launch_Go_Ibibo")
+	@Test (dependsOnMethods = "enter_Otp")
 	public void search_Trains() throws Exception {
 		Thread.sleep(3000);
 		explicitWait(Page_Object_Manager.getPom().getSearchTrains().getClick_trains_module());
